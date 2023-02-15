@@ -2,6 +2,8 @@
 
 <div class="container">
     <form [formGroup]="editForm" (ngSubmit)="postForm(editForm.value)">
+        <button type="button" class="btn btn-dark" (click)="close()">Salir</button>
+        <br><br>
         <div class="form-group">
             <label for="exampleFormControlImput1">Nombre</label>
             <input type="text" class="form-control" placeholder="Nombre del Paciente" formControlName="nombre">
