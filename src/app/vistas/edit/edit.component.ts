@@ -54,6 +54,13 @@ export class EditComponent implements OnInit {
     })
     // console.log(pacienteid)
     // console.log(token)
+    this.checkLocalStorage();
+  }
+
+  checkLocalStorage(){
+    if(localStorage.getItem('token') === null){
+      this.router.navigate(['login'])
+    }
   }
 
   getToken(){

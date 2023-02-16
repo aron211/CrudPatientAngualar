@@ -33,6 +33,13 @@ export class CreateComponent implements OnInit {
     this.newForm.patchValue({
       'token' : token
     });
+    this.checkLocalStorage();
+  }
+
+  checkLocalStorage(){
+    if(localStorage.getItem('token') === null){
+      this.router.navigate(['login'])
+    }
   }
 
   postForm(form: any){

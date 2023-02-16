@@ -19,6 +19,13 @@ export class DashboardComponent implements OnInit {
       this.pacientes=data
       // console.log(data)
     })
+    this.checkLocalStorage();
+  }
+
+  checkLocalStorage(){
+    if(localStorage.getItem('token') === null){
+      this.router.navigate(['login'])
+    }
   }
 
   editPatient(id: any){
@@ -31,3 +38,5 @@ export class DashboardComponent implements OnInit {
   }
 
 }
+
+//how to verificate localstorage is empty? 
