@@ -7,9 +7,12 @@ html {
     position: absolute;
     /* height: 100px; */
     margin-top: 100px;
-    bottom: -110px;
+    bottom: -150px;
     width: 100%;
-    background-color: rgb(5, 134, 246);
-    color: rgb(255, 255, 255);
+    /* background-color: rgb(5, 134, 246);
+     */
+     background-color: #1e293b;
+
+    color: #0dcaf0;
     font-weight: bold;
 }

@@ -12,6 +12,7 @@ const routes: Routes = [
   { path:'dashboard', component:DashboardComponent},
   { path:'create', component:CreateComponent},
   { path:'edit/:id', component:EditComponent},
+  { path: '**', redirectTo: 'login'}
 
 ]
 

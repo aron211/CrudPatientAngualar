@@ -1,4 +1,4 @@
-.navbar{
+/* .navbar{
     height: 100px;
     width: 100vw;
     background-color: rgb(110, 180, 242);
@@ -8,10 +8,28 @@
 }
 
 .btn{
-    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(255, 255, 255);
     right: 0px;
 }
 
 .btnclosesesion{
     float: right;
+} */
+
+nav,
+.offcanvas {
+  background-color: #1e293b;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav > li:hover {
+    background-color: #0dcaf0;
+  }
 }
