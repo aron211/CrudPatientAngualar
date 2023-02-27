@@ -1,0 +1,49 @@
+<!-- <app-header></app-header> -->
+
+<div class="container">
+    <form class="col-12" [formGroup]="deleteForm" (ngSubmit)="postForm(deleteForm.value)">
+        <!-- <button type="button" class="btn btn-dark" (click)="close()">Salir</button> -->
+        <br>
+        <h1>Estas seguro que deseas eliminar a este paciente?</h1>
+        <br>
+        <div class="form-group col-12 ">
+            <label for="exampleFormControlImput1">Nombre</label>
+            <input  type="text" class="form-control" placeholder="Nombre del Paciente" formControlName="nombre" readonly>
+            <!-- <input class="form-control" type="text" value="Disabled readonly input"  aria-label="Disabled input example" disabled readonly> -->
+            <!-- </div>
+        <div class="form-group"> -->
+            <label for="exampleFormControlImput1">Direccion</label>
+            <input type="text" class="form-control" placeholder="Nombre del Paciente" formControlName="direccion" readonly>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlImput1">DNI</label>
+            <input type="text" class="form-control" placeholder="Nombre del Paciente" formControlName="dni" readonly>
+        <!-- </div>
+        <div class="form-group"> -->
+            <label for="exampleFormControlImput1">Codigo Postal</label>
+            <input type="text" class="form-control" placeholder="Nombre del Paciente" formControlName="codigoPostal" readonly> 
+        <!-- </div>
+        <div class="form-group"> -->
+            <label for="exampleFormControlImput1">Telefono</label>
+            <input type="text" class="form-control" placeholder="Nombre del Paciente" formControlName="telefono" readonly>
+        <!-- </div>
+        <div class="form-group"> -->
+            <label for="exampleFormControlImput1">Fecha de Nacimiento</label>
+            <input type="text" class="form-control" placeholder="Nombre del Paciente" formControlName="fechaNacimiento" readonly>
+        <!-- </div>
+        <div class="form-group"> -->
+            <label for="exampleFormControlImput1">Correo</label>
+            <input type="text" class="form-control" placeholder="Nombre del Paciente" formControlName="correo" readonly>
+        <!-- </div> 
+        <div class="form-group"> -->
+            <label for="exampleFormControlImput1">Genero</label>
+            <input type="text" class="form-control" placeholder="Nombre del Paciente" formControlName="genero" readonly>
+        </div>
+
+        <br>
+  
+        <button type="button" class="btn btn-danger" (click)="delete()">Eliminar</button>
+        <button type="submit" class="btn btn-secondary" (click)="close()">Cancelar</button>
+    </form>
+</div>
+<!-- <app-footer></app-footer> -->

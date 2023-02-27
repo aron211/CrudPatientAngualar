@@ -4,6 +4,7 @@ import {LoginComponent} from './vistas/login/login.component'
 import {DashboardComponent} from './vistas/dashboard/dashboard.component'
 import {CreateComponent} from './vistas/create/create.component'
 import {EditComponent} from './vistas/edit/edit.component'
+import {DeleteComponent} from './vistas/delete/delete.component'
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path:'dashboard', component:DashboardComponent},
   { path:'create', component:CreateComponent},
   { path:'edit/:id', component:EditComponent},
+  { path:'delete/:id', component:DeleteComponent},
   { path: '**', redirectTo: 'login'}
 
 ]
@@ -42,5 +44,6 @@ export const routingComponent = [
   LoginComponent, 
   DashboardComponent, 
   CreateComponent,
-  EditComponent
+  EditComponent,
+  DeleteComponent,
 ]

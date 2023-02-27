@@ -32,6 +32,10 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(['edit', id])
     // console.log(id)
   }
+  deletePatient(id: any){
+    this.router.navigate(['delete', id])
+    // console.log(id)
+  }
 
   newPatient(){
     this.router.navigate(['create'])

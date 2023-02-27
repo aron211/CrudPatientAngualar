@@ -16,9 +16,13 @@
     </form>
 
     <!-- Remind Passowrd -->
-    <div class="alert alert-danger" *ngIf="errorStatus">
+    <!-- <div class="alert alert-danger" *ngIf="errorStatus">
       <p>{{errorMsj}}</p>
-    </div>
+    </div> -->
+      <div *ngIf="errorStatus" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Ups!</strong> Las credenciales ingresadas son incorrectas.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
 
   </div>
 </div>
